@@ -2,6 +2,12 @@
   <div class="home">
     <h1>Home</h1>
   </div>
+  <div class="row" v-if="about">
+    <p v-for="aboutMe in about" :key="aboutMe.id">
+      {{ aboutMe }}
+    </p>
+
+  </div>
 </template>
 
 <script>
